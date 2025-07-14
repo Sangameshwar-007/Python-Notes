@@ -6,6 +6,27 @@
 -It can store **heterogeneous**  data (i.e., different data types).
 -A **tuple** allow the 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **Example:**
 ```python
 String = "Python String"
