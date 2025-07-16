@@ -205,6 +205,131 @@ print(len(fruits))  # 3
 - A list comprehension is a concise way to create a new list by transforming, filtering, or generating elements from an existing iterable (like a list, range, etc.).
 
 
+## Dictionary { }
+-A **dictionary** is a built-in Python data structure that stores data in key-value pairs.            
+
+-Keys must be unique and immutable (e.g., strings, numbers, tuples).          
+
+**Common Methods of Dictionaries**
+
+**1.dict.keys()**              
+-Returns a view object containing all keys.
+```python
+person = {"name": "Alice", "age": 25, "city": "New York"}
+print(person.keys())
+```
+**Output**
+``` python 
+dict_keys(['name', 'age', 'city'])
+ ```
+
+**2.dict.values()**          
+-Returns a view object containing all values.
+``` python 
+print(person.values())
+```
+**Output**
+```python
+dict_values(['Alice', 25, 'New York'])
+```
+**3. dict.items()**               
+-Returns a view object containing key-value pairs as tuples.
+ ```python
+print(person.items())
+ ```
+**Output**
+```python 
+dict_items([('name', 'Alice'), ('age', 25), ('city', 'New York')])
+```
+**4. dict.get(key, default)***              
+-Returns the value for the specified key; returns default if the key is not found.
+```python
+print(person.get("age"))           # Existing key
+print(person.get("country", "USA"))  # Missing key, use default
+```
+**Output:**
+ ```python
+25
+USA
+```
+**5. dict.update(other_dict)**           
+-Updates the dictionary with key-value pairs from another dictionary.
+```python
+person.update({"age": 26, "country": "USA"})
+print(person)
+```
+**Output:**
+```python
+{'name': 'Alice', 'age': 26, 'city': 'New York', 'country': 'USA'}
+```
+
+
+**6. dict.pop(key, default)**                   
+-Removes the item with the specified key and returns its value. If the key is missing, returns default.
+```python
+age = person.pop("age", 0)
+print("Popped age:", age)
+print(person)
+```
+**Output:**
+```python
+Popped age: 26
+{'name': 'Alice', 'city': 'New York', 'country': 'USA'}
+```
+**7. dict.popitem()**
+-Removes and returns the last inserted key-value pair as a tuple.
+```python
+last_item = person.popitem()
+print("Last item:", last_item)
+print(person)
+```
+**Output:**
+```python
+Last item: ('country', 'USA')
+{'name': 'Alice', 'city': 'New York'}
+```
+**8. dict.clear()**               
+-Removes all items from the dictionary.
+```python
+person.clear()
+print(person)
+```
+**Output:**
+```python
+{}
+```
+**9. dict.copy()**               
+-Returns a shallow copy of the dictionary.
+```python
+student = {"name": "John", "marks": 90}
+student_copy = student.copy()
+print(student_copy)
+```
+**Output:**
+```python
+{'name': 'John', 'marks': 90}
+```
+**10.dict.setdefault(key, default)**             
+-Returns the value of the key. If key doesn’t exist, inserts it with the default value.
+```python
+student = {"name": "John"}
+grade = student.setdefault("grade", "A")
+print("Grade:", grade)
+print(student)
+```
+**Output:**
+```python
+Grade: A
+{'name': 'John', 'grade': 'A'}
+```
+
+
+
+
+
+
+
+
 
 
 
