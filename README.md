@@ -1,7 +1,7 @@
 # Python-Notes
 
 
-### Definition:
+### Tuple:
 -A **tuple** is an **ordered, immutable** (cannot be changed after creation) collection of elements in Python.  
 -It can store **heterogeneous**  data (i.e., different data types).                  
 -A **tuple** allow the **duplicate values.**     
@@ -117,7 +117,7 @@ print(sum(nums))
 1
 21
 ```
-## Tupole Methods 
+## Tupule Methods 
 -They only **Two-built-in-function**
 
 **1.Count() method:**
@@ -134,16 +134,79 @@ t2 = (10, 20, 30,-30,40)
 print(t2.index(-30))     #Output:3
 ```
 
+### List[]:
+-A list in Python is an ordered, mutable (changeable) collection that can hold items of any data type.      
+-numbers, strings, other lists, objects, etc.
+- Ordered → Elements have a fixed position (index starting from 0).
+- Mutable → You can add, remove, or change items after creation.
+
+## Types of elements in a list
+- Integers: [1, 2, 3]
+- Strings: ["a", "b", "c"]
+- Floats: [1.1, 2.2, 3.3]
+- Booleans: [True, False]
+- Mixed types: [1, "two", 3.0, False]
+- Other lists (nested lists): [1, [2, 3], 4]
+
+
+## Common list operations
+**1.Indexing:**  Get a single item by its position.
+```python
+my_list = [10, 20, 30, 40]
+print(my_list[0])  # Output: 10
+print(my_list[-1]) # Output: 40 (last element)
+
+```
+**2.Slicing:**  Get a sublist by specifying start, stop, and step.
+```python
+print(my_list[1:3])   # [20, 30]
+print(my_list[::2])   # [10, 30] (every second element)
+```
+**3.Concatenation:** Join two lists together.
+
+```python
+a = [1, 2]
+b = [3, 4]
+c = a + b
+print(c)  # [1, 2, 3, 4]
+```
+**4.Repetition:** Repeat the list multiple times.
+```python
+d = [0, 1]
+print(d * 3)  # [0, 1, 0, 1, 0, 1]
+```
+**5.Membership:** Check if an item is in the list.
+```python
+fruits = ["apple", "banana", "cherry"]
+print("banana" in fruits)   # True
+print("grape" not in fruits)  # True
+```
+**6.Length:**  Number of elements in the list.
+print(len(fruits))  # 3
+
+## Common list methods
+
+| Method      | Description                                                        | Example                                    |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------ |
+| `append()`  | Adds a single item to the end of the list                          | `my_list.append(5)`                        |
+| `extend()`  | Adds multiple items from another iterable (like a list) to the end | `my_list.extend([6, 7])`                   |
+| `insert()`  | Inserts an item at a specified index                               | `my_list.insert(2, 'apple')`               |
+| `remove()`  | Removes the **first** occurrence of a specified value              | `my_list.remove('apple')`                  |
+| `pop()`     | Removes and returns the last item (or item at specified index)     | `item = my_list.pop()` or `my_list.pop(1)` |
+| `clear()`   | Removes all items from the list, making it empty                   | `my_list.clear()`                          |
+| `index()`   | Returns the index of the **first** occurrence of a value           | `i = my_list.index('apple')`               |
+| `count()`   | Counts how many times a value appears in the list                  | `n = my_list.count('apple')`               |
+| `sort()`    | Sorts the list in place (modifies the list itself)                 | `my_list.sort()`                           |
+| `reverse()` | Reverses the order of elements in the list (in place)              | `my_list.reverse()`                        |
+| `copy()`    | Returns a shallow copy of the list                                 | `new_list = my_list.copy()`                |
+
+
+## List comprehension.
+- A list comprehension is a concise way to create a new list by transforming, filtering, or generating elements from an existing iterable (like a list, range, etc.).
 
 
 
 
- 
- 
-
-
-
-    
 
 
 
@@ -153,20 +216,5 @@ print(t2.index(-30))     #Output:3
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
