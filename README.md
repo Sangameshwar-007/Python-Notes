@@ -1,6 +1,18 @@
 # Python-Notes
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ### Tuple:
 -A **tuple** is an **ordered, immutable** (cannot be changed after creation) collection of elements in Python.  
 -It can store **heterogeneous**  data (i.e., different data types).                  
@@ -133,6 +145,10 @@ Finds the first index of the specified element.
 t2 = (10, 20, 30,-30,40)
 print(t2.index(-30))     #Output:3
 ```
+
+
+
+
 
 ### List[]:
 -A list in Python is an ordered, mutable (changeable) collection that can hold items of any data type.      
@@ -322,6 +338,7 @@ print(student)
 Grade: A
 {'name': 'John', 'grade': 'A'}
 ```
+
 
 
 
