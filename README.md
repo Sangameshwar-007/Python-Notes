@@ -13,7 +13,7 @@
 
 
 
-### Tuple:
+# Tuple:
 -A **tuple** is an **ordered, immutable** (cannot be changed after creation) collection of elements in Python.  
 -It can store **heterogeneous**  data (i.e., different data types).                  
 -A **tuple** allow the **duplicate values.**     
